@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZED Corp Member</title>
+        <link rel="stylesheet" type="text/css" href="regform.css">
+        <link rel="icon" href="SnakeLg.png">
+    </head>
+
+    <body>
+     <div class="Signup">
+        
+        <div class="intro">
+            <img src="SnakeLg.png">
+            <h1>Be a member</h1>
+        </div>
+
+        <form action="https://formsubmit.co/c7bf2bfc43105f81e7df88beb379580d" method="POST"/>
+
+            <div class="inputBox">
+                <input type="text" name="username" required>
+                <label>username</label>
+            </div>
+            <div class ="inputBox">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <label>Create &nbsp Password</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="cpassword" required>
+                <label>Confirm  &nbsp Password</label>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="create">
+                
+            </div>
+            <p>Already a Member ? <a href="membenft.html">Sign in</a></p>
+        </form>
+    </div>
+
+        <script>
+            let label = document.querySelectorAll('label').forEach(label => 
+            {label.innerHTML = label.innerText.split('').map((letters, i) =>
+            `<span style="transition-delay: ${i * 50}ms">${letters}</span>`).join('');});
+        </script>
+
+    </body>
+
+</html>

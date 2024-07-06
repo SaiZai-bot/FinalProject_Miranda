@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.About {
+    display: grid;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+
+body{
+    background-color:  #ECC7B0;
+
+}
+
+.Header{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    background-color: #4D2D18;
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    transition: all 1s;
+
+}
+
+.Logo{
+    width: 50%;
+    min-height: 50px;
+    padding-left: 15%;
+    padding-right: 5%;
+    line-height: 50px;
+    float: left;
+}
+
+.Logo img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 125px;
+    height: 125px;
+    float: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 1s;
+
+}
+
+
+.Navigation{
+    width: 50%;
+    min-height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
+    float: left;
+    text-align: center;
+}
+
+.nav_link {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.42;
+    text-decoration: none;
+    padding: 10px;
+   
+}
+
+.nav_link:hover{
+    color: #ECC7B0;
+}
+
+.nav_link::after{
+    content: '';
+    height: 4px;
+    width: 100%;
+    font-weight: bolder;
+    background: #ECC7B0;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.nav_link:hover::after{
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+
+
+.AbtCompany {
+    background-color: #4D2D18;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-self: auto;
+    margin-bottom: 30px;
+    transition: all 1s;
+    
+  }
+
+#LogoPic img{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to left, #4D2D18 10%, #ECC7B0);
+    margin-right: 15px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+
+
+#Descrption p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-right: 10px;
+    transition: all 1s;
+
+}
+
+.heading {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+.Pictures1 {
+    background-color: #4D2D18;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    transition: all 1s;
+    animation: Fade linear;
+    animation-timeline: view();
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#Crane img{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right, #4D2D18 10%, #ECC7B0);
+    float: right;
+    border-radius: 10px;
+
+}
+
+#Crane p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.headingC {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+
+.Pictures2 {
+    background-color: #4D2D18;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+    animation: Fade linear;
+    animation-timeline: view();
+    transition: all 1s;
+}
+
+#Excavator img {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to left, #4D2D18 10%, #ECC7B0);
+    float: left;
+    border-radius: 10px;
+}
+
+#Excavator p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.headingE {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+.Pictures3 {
+    background-color: #4D2D18;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    animation: Fade linear;
+    animation-timeline: view();
+    transition: all 1s;
+}
+
+#Hauls img {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right, #4D2D18 10%, #ECC7B0);
+    float: right;
+    border-radius: 10px;
+}
+
+#Hauls p {
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headingH {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+
+.Footer{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #4D2D18;
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-style: 'Poppins';
+
+}
+
+.Foot{
+    width: 50%;
+    min-height: 50px;
+    padding-left: 15%;
+    padding-right: 5%;
+    line-height: 50px;
+    float: left;
+}
+
+.Foot img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 125px;
+    height: 125px;
+    float: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Info{
+   margin-top: 10px;
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+
+.info1{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
+}
+
+.info2{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
+}
+
+.info2{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
+}
+
+
+@keyframes Fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate();
+    }
+    100%{
+        transform: translate();
+    }
+    
+}
